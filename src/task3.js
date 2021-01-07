@@ -1,23 +1,3 @@
-
-
-
-
-
-// const makeTransaction = (transaction, onSuccess, onError) => {
-//   const delay = randomIntegerFromInterval(200, 500);
-
-//   setTimeout(() => {
-//     const canProcess = Math.random() > 0.3;
-
-//     if (canProcess) {
-//       onSuccess(transaction.id, delay);
-//     } else {
-//       onError(transaction.id);
-//     }
-//   }, delay);
-// };
-
-
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
@@ -74,3 +54,6 @@ makeTransaction({ id: 72, amount: 75 })
 makeTransaction({ id: 73, amount: 100 })
   .then(logSuccess)
   .catch(logError);
+
+
+
